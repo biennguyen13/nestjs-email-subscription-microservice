@@ -27,6 +27,10 @@
     "rxjs": "^7.2.0"
   },
   "devDependencies": {
+    "@nestjs/microservices": "^9.1.4",
+    "@nestjs/config": "^2.2.0",
+    "@nestjs/mongoose": "^7.2.4",
+    "mongoose": "^5.13.14",
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
     "@nestjs/testing": "^9.0.0",

@@ -1,4 +1,4 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 import { SubscriberService } from './subscriber.service';
 import {
   EventPattern,
@@ -17,6 +17,7 @@ export class SubscriberController {
     return await this.subscriberService.addSubscriber(createSubscriberDto);
   }
 
+  @Get()
   @MessagePattern({ cmd: 'get-all-subscriber' })
   async getAllSubscriber() {
     return await this.subscriberService.getAllSubscriber();
